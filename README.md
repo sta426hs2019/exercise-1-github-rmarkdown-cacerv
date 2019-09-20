@@ -14,7 +14,7 @@ http://rmarkdown.rstudio.com
 
 
 
-If you need some help here a video for getting started:
+If you need some help, here a video for getting started:
 
 ![I need help!](https://youtu.be/tKUufzpoHDE)
 
