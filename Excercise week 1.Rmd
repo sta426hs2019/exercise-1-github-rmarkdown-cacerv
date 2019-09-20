@@ -1,0 +1,45 @@
+---
+title: "Exercise week 1"
+author: "Carlo Cervia"
+date: "20 9 2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+## Exercise Description
+
+Create an HTML document that samples 100 values from a log-normal
+distribution (say, mu=1, sigma=.25); create a histogram of the
+distribution and the distribution on the log scale; report the mean and
+variance of the sample in line in the text.
+
+### Here we go..
+
+## Sample Generation
+
+```{r}
+rlnorm(100, mean=1, sd= 0.25)
+
+samp <- rlnorm(100, mean=1, sd= 0.25)
+```
+
+
+## Plots
+
+```{r}
+plot(samp)
+
+hist(samp, breaks=20, xlab= "Value",  main= "Distribution", col =  "darkblue")
+
+hist(log(samp), breaks=20, xlab= "Value", main= "Distribution on log scale" , col = "lightgreen")
+```
+
+## Discussion
+
+The mean of the sample is `r mean(samp)` and the variance is `r var (samp)`.
+
+
